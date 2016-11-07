@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form" >
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -93,7 +94,7 @@
 									<h3>Medication</h3>
 									<div class="row">
 										<div class="col-xs-12">
-											<form method="post">
+											<form:form method="post" commandName="disease">
 
 												<div class="row">
 													<div class="col-lg-6">
@@ -122,6 +123,9 @@
 														</div>
 													</div>
 												</div>
+												<div class="form-group">
+													<a class="btn btn-success" href="disease">Submit</a>
+												</div>
 												<!--<div class="row">
 													<div class="col-lg-6">
 														<div class="form-group">
@@ -135,7 +139,7 @@
 													</div>
 												</div>-->
 
-											</form>
+											</form:form>
 										</div>
 									</div>
 								</div>
